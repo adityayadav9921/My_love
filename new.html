@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2025</title>
+    <!-- Link to an external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Existing internal CSS (optional to keep here) */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #1f1c2c, #928dab);
+            overflow: hidden;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        /* More existing CSS here... */
+
+        .next-button {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #928dab;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .next-button:hover {
+            background-color: #6a4f82;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy New Year 2025!</h1>
+    <p>
+        "Friends is the heart of every celebration. <br> 
+        Here's to cherishing every moment together. <br> 
+        Happy New Year, my dear friends!"
+    </p>
+
+    <div class="gallery">
+        <!-- Add multiple family photos -->
+        <div class="photo">
+            <img src="1.jpg" alt="Family Member 1">
+        </div>
+        <div class="photo">
+            <img src="5.jpg" alt="Family Member 2">
+        </div>
+        <div class="photo">
+            <img src="6.jpg" alt="Family Member 3">
+        </div>
+        <div class="photo">
+            <img src="2.jpg" alt="Family Member 4">
+        </div>
+        <div class="photo">
+            <img src="7.jpg" alt="Family Member 5">
+        </div>
+    </div>
+
+    <div class="sparkle">
+        <!-- Random sparkles -->
+        <span style="top: 20%; left: 15%; animation-delay: 0.5s;"></span>
+        <span style="top: 50%; left: 40%; animation-delay: 1.5s;"></span>
+        <span style="top: 70%; left: 70%; animation-delay: 2s;"></span>
+        <span style="top: 10%; left: 80%; animation-delay: 0.8s;"></span>
+        <span style="top: 30%; left: 30%; animation-delay: 2.5s;"></span>
+    </div>
+
+    <!-- Add Next Button -->
+    <a href="nextpage.html" class="next-button">Next Page</a>
+
+    <script>
+        const sparkleContainer = document.querySelector('.sparkle');
+        for (let i = 0; i < 50; i++) {
+            const sparkle = document.createElement('span');
+            sparkle.style.top = Math.random() * 100 + '%';
+            sparkle.style.left = Math.random() * 100 + '%';
+            sparkle.style.animationDelay = Math.random() * 3 + 's';
+            sparkleContainer.appendChild(sparkle);
+        }
+    </script>
+</body>
+</html>
